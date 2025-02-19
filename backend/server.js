@@ -105,7 +105,7 @@ app.post('/submit-form', async (req, res) => {
     res.status(200).json({ success: true, message: 'Form submitted successfully' });
   } catch (error) {
     console.error('Error submitting form:', error);
-    res.status(500).json({ success: false, message: 'Error submitting form. Please try again.' });
+    res.status(500).json({ success: false, message: 'Error submitting form! Please try later.' });
   }
 });
 
